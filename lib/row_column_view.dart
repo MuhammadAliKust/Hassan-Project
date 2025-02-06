@@ -9,26 +9,49 @@ class RowColumnView extends StatelessWidget {
       appBar: AppBar(
         title: Text("Row and Column"),
       ),
-      body: Row(
+      body: Column(
         children: [
           Text(
             "First Text",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 30),
           ),
-          SizedBox(
-            width: 20,
-          ),
-          Text(
-            "Second Text",
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(
-            width: 20,
-          ),
-          Text(
-            "Third Text",
-            style: TextStyle(fontSize: 20),
-          ),
+          SizedBox(height: 10,),
+          Text("Second Text",style: TextStyle(fontSize: 30),),
+          SizedBox(height: 20,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Icon(Icons.add),
+            Icon(Icons.add),
+Column(
+  children: [
+
+    Icon(Icons.add),
+
+    Icon(Icons.add),
+Row(children: [
+
+  Icon(Icons.add),
+
+  Icon(Icons.add),
+Column(children: [
+
+  Icon(Icons.add),
+
+  Icon(Icons.add),
+
+  Icon(Icons.add),
+
+  Icon(Icons.add),
+],)
+],),
+
+    Icon(Icons.add),
+
+  ],
+),
+            Icon(Icons.add),
+          ],)
         ],
       ),
     );
