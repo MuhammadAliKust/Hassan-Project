@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hassan_project/asset_image.dart';
+import 'package:hassan_project/network_image.dart';
 import 'package:hassan_project/row_column_view.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: RowColumnView(),
+    home: AssetImageView(),
     );
   }
 }
