@@ -21,25 +21,29 @@ class LoginView extends StatelessWidget {
       ),
       body: Column(
         children: [
-          TextField(
-            controller: emailController,
-            keyboardType: TextInputType.phone,
-            decoration: InputDecoration(
-                label: Text("Email"),
-                hintText: 'test@mail.com',
-                enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Colors.yellow, width: 4)),
-                focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Colors.yellow, width: 4)),
-                disabledBorder: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.email),
-                suffixIcon: Icon(Icons.email),
-                filled: true,
-                fillColor: Colors.blue.withOpacity(0.4)
-                // enabled: false
-                ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 30,right: 40,top: 40,bottom: 70),
+            child: TextField(
+              controller: emailController,
+              keyboardType: TextInputType.phone,
+              decoration: InputDecoration(
+                  label: Text("Email"),
+                  hintText: 'test@mail.com',
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(color: Colors.yellow, width: 4)),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(color: Colors.yellow, width: 4)),
+                  disabledBorder: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.email),
+                  suffixIcon: Icon(Icons.email),
+                  filled: true,
+                  fillColor: Colors.blue.withOpacity(0.4)
+                  // enabled: false
+                  ),
+            ),
           ),
           SizedBox(
             height: 20,
