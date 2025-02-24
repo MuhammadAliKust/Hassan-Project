@@ -31,7 +31,9 @@ class _MultipleSelectionDemoState extends State<MultipleSelectionDemo> {
                     selectedIndex.add(i);
                   }
 
-                  setState(() {});
+                  setState(() {
+
+                  });
                 },
                 leading: Icon(Icons.notifications),
                 title: Text("Selected Index: $selectedIndex"),

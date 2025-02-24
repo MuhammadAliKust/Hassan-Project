@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hassan_project/asset_image.dart';
+import 'package:hassan_project/dynamic_list_view.dart';
 import 'package:hassan_project/list_tile.dart';
 import 'package:hassan_project/list_view_demo.dart';
 import 'package:hassan_project/login.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: MultipleSelectionDemo(),
+    home: DynamicListView(),
     );
   }
 }
