@@ -5,7 +5,6 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class PageViewDemo extends StatelessWidget {
   PageViewDemo({super.key});
 
-
   PageController controller = PageController();
   List<OnBoardingModel> onBoarding = [
     OnBoardingModel(title: 'Trending News', image: 'assets/images/Group.png'),
@@ -27,10 +26,9 @@ class PageViewDemo extends StatelessWidget {
       ),
       body: Column(
         children: [
-
           Expanded(
             child: PageView.builder(
-              controller: controller,
+                controller: controller,
                 scrollDirection: Axis.horizontal,
                 itemCount: onBoarding.length,
                 itemBuilder: (context, i) {
@@ -43,14 +41,13 @@ class PageViewDemo extends StatelessWidget {
                 }),
           ),
           SmoothPageIndicator(
-              controller: controller,  // PageController
-              count:  onBoarding.length,
-              effect:  ExpandingDotsEffect(),  // your preferred effect
-              onDotClicked: (index){
-              }
-          ),
-          SizedBox(height: 40,)
-
+              controller: controller, // PageController
+              count: onBoarding.length,
+              effect: ExpandingDotsEffect(), // your preferred effect
+              onDotClicked: (index) {}),
+          SizedBox(
+            height: 40,
+          )
         ],
       ),
     );
