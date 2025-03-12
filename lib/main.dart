@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hassan_project/asset_image.dart';
 import 'package:hassan_project/bottom_bar_view.dart';
+import 'package:hassan_project/bottom_sheet_demo.dart';
+import 'package:hassan_project/dialog_box_demo.dart';
 import 'package:hassan_project/dynamic_list_view.dart';
 import 'package:hassan_project/grid_view.dart';
 import 'package:hassan_project/list_tile.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: TabbarDemo(),
+    home: BottomSheetDemo(),
     );
   }
 }
