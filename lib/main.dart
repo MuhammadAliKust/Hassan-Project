@@ -12,6 +12,7 @@ import 'package:hassan_project/multiple_selection.dart';
 import 'package:hassan_project/network_image.dart';
 import 'package:hassan_project/page_view.dart';
 import 'package:hassan_project/row_column_view.dart';
+import 'package:hassan_project/screen_a.dart';
 import 'package:hassan_project/tabbar.dart';
 import 'package:hassan_project/task.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: BottomSheetDemo(),
+    home: ScreenAView(),
     );
   }
 }
