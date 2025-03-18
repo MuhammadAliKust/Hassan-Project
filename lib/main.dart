@@ -11,13 +11,20 @@ import 'package:hassan_project/login.dart';
 import 'package:hassan_project/multiple_selection.dart';
 import 'package:hassan_project/network_image.dart';
 import 'package:hassan_project/page_view.dart';
+import 'package:hassan_project/providers/user_provider.dart';
 import 'package:hassan_project/row_column_view.dart';
 import 'package:hassan_project/screen_a.dart';
 import 'package:hassan_project/tabbar.dart';
 import 'package:hassan_project/task.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => UserProvider()),
+    ],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: ScreenAView(),
+      home: ScreenAView(),
     );
   }
 }
